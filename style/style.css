@@ -12,13 +12,15 @@
 }
 
 body{font-family: var(--body-font);
-
 }
+
+/* Header */
+
 
 header{
     background-image: url(/images/keyboard-xl.jpg);
     width: 100vw;
-    height: 100vh;
+    height: 850px;
     background-size: cover;
     max-width: 100%;
 }
@@ -28,7 +30,7 @@ header{
 }
 
 .bi.bi-list{
-    color: rgb(215, 184, 46);
+    color: var(--yellow-color);
     font-size: 50px;
     margin-top: 50px;
     margin: auto;
@@ -52,8 +54,7 @@ header{
 
 .nav-link:hover{
     color: #fff;
-    border-bottom: 2px solid rgb(215, 184, 46);
-    padding-bottom: 5px;
+    border-bottom: 2px solid var(--yellow-color);    padding-bottom: 5px;
 }
 
 .text{
@@ -63,7 +64,7 @@ header{
 
 .text--content h1{
     font-family: var(--title-font);
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     margin-bottom: 30px;
 }
@@ -82,7 +83,234 @@ header{
     font-size: 20px;
 }
 
+
+
+
+/* Section Card-Project */
+
+.card--project{
+    margin-top: -295px;
+}
+
+.card--project1, .card--project2, .card--project3{
+    width: 250px;
+    height: 150px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+}
+
+.card--project1{
+    background-color: #fff;
+}
+
+.card--project2{
+    background-color: var(--yellow-color);
+}
+
+.card--project3{
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* Section skills Chevrons*/
+
+
+.chevron1{
+    width: 50px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    position: relative;
+    top: -60px;
+}
+
+.chevron1::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    top: 23px;
+    left: -25px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.chevron2{
+    width: 20px;
+    height: 3px;
+    margin-top: 16px;
+    margin-left: 16px;
+    background-color: var(--yellow-color);
+    position: relative;
+    top: -60px;
+    left: -50px;
+}
+
+.chevron2::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--yellow-color);
+    top: 9px;
+    left: -10px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.chevron3 {
+    bottom: -230px;
+    width: 50px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    position: relative;
+}
+  
+  .chevron3::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: var(--yellow-color);
+    bottom: 23px;
+    left: 25px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+  
+  .chevron4 {
+    bottom: -230px;
+    width: 20px;
+    height: 3px;
+    margin-top: -15px;
+    margin-left: -35px;
+    background-color: var(--yellow-color);
+    position: relative;
+}
+  
+  .chevron4::before {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--yellow-color);
+    top: -9px;
+    left: 13px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+/* Section Skill */
+
+.section--skill{
+    margin-top: 50px;
+}
+
+.section--skils ,h2{
+    font-weight: bold;
+}
+
+.section--skill, ul, li{
+    list-style-type: none;
+}
+
 .skill, .tools, .quality{
     list-style-type: none;
 }
 
+.container .section--skill h2{
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .section--skill ul>li{
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width:10px) and (max-width: 992px){
+    .chevron3{
+        margin-left: 85%;
+        bottom: -100px;
+    }
+    .chevron4{
+        bottom: -100px;
+    } 
+}
+
+@media (min-width: 992px){
+    .chevron3{
+        margin-left: 50%;
+    }
+
+    .section--skill h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 380px){
+    .text--content h3{
+        font-size: 14px;
+        }
+    .text--content h2{
+            font-size: 25px;
+    }
+    .card--project{
+        margin-top: 50px;  
+    }
+}
+
+@media (max-width: 768px){
+    .card--project1, .card--project2, .card--project3{
+        margin-bottom: 40px;
+    }
+
+    .card--project{
+        margin-top: -170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text--content h3{
+        font-size: 14px;
+        }
+    .text--content h2{
+        font-size: 25px;
+    }   
+}
+
+@media (min-width: 768px){
+    .section--skill{
+        margin-top: -280px;
+    }
+    .text--content h1{
+        font-size: 80px;
+    }
+    .card--project{
+        margin-top: -295px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .chevron3{
+        margin-left: 60%;
+        bottom: -50px;
+    }  
+    .chevron4{
+        bottom: -50px;
+    }   
+}
+
+
+
+@media (min-width: 1450px){
+    .card--project1, .card--project2, .card--project3{
+        margin-bottom: 40px;
+        width: 350px;
+        height: 250px;
+    }
+    .card--project{
+        margin-top: -420px;
+        } 
+}
