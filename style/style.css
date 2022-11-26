@@ -14,6 +14,7 @@
 body{font-family: var(--body-font);
 }
 
+
 /* Header */
 
 
@@ -84,9 +85,9 @@ header{
 }
 
 
+/* MAIN */
 
-
-/* Section Card-Project */
+/* Section MAIN Card-Project */
 
 .card--project{
     margin-top: -295px;
@@ -112,7 +113,9 @@ header{
 }
 
 
-/* Section skills Chevrons*/
+/* MAIN */
+
+/* Section MAIN Skills Chevrons*/
 
 
 .chevron1{
@@ -196,7 +199,7 @@ header{
     position: absolute;
 }
 
-/* Section Skill */
+/* Section MAIN Skill */
 
 .section--skill{
     margin-top: 50px;
@@ -204,6 +207,10 @@ header{
 
 .section--skils ,h2{
     font-weight: bold;
+}
+
+.section--skill, ul{
+    padding: 0;
 }
 
 .section--skill, ul, li{
@@ -228,6 +235,24 @@ header{
 
 /* MEDIA QUERIES */
 
+@media (max-width: 380px){
+    .text--content h3{
+        font-size: 14px;
+        }
+    .text--content h2{
+            font-size: 25px;
+    }
+    .card--project{
+        margin-top: 50px;  
+    }
+}
+
+@media (max-width: 576px){
+    .chevron1{
+        margin-left: 4%;
+    }
+}
+
 @media (min-width:10px) and (max-width: 992px){
     .chevron3{
         margin-left: 85%;
@@ -239,25 +264,17 @@ header{
 }
 
 @media (min-width: 992px){
-    .chevron3{
-        margin-left: 50%;
-    }
-
     .section--skill h2{
         font-size: 24px;
         font-weight: bold;
     }
-}
-
-@media (max-width: 380px){
-    .text--content h3{
-        font-size: 14px;
-        }
-    .text--content h2{
-            font-size: 25px;
+    .chevron3{
+        margin-left: none;
+        bottom: -250px;
     }
-    .card--project{
-        margin-top: 50px;  
+
+    .chevron4{
+        bottom: -250px
     }
 }
 
@@ -293,15 +310,7 @@ header{
         align-items: flex-end;
         justify-content: center;
     }
-    .chevron3{
-        margin-left: 60%;
-        bottom: -50px;
-    }  
-    .chevron4{
-        bottom: -50px;
-    }   
-}
-
+}   
 
 
 @media (min-width: 1450px){
