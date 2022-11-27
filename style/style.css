@@ -501,21 +501,32 @@ header{
     text-align: center;
 }
 
-.contact--button:hover{
-    cursor: pointer;
-}
-
-.contact--button a{
+.contact--button, a{
     font-size: 30px;
     text-decoration: none;
     color: var(--white-color);
     font-weight: bold;
+    -webkit-transition: all 0.3s ease;
 }
+
+.contact--button:hover{
+    letter-spacing: 3px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    filter: drop-shadow(4px 5px 10px #665E5E);
+}
+
+.contact--button> a:hover{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+
 
 /* COPYRIGHT FOOTER */
 
 .copyright{
-    width: 100vw;
+    width: 100%;
     background-color: var(--grey-color);
     color: var(--white-color);
     height: 100px;
@@ -645,6 +656,10 @@ header{
 
     .section--follow li{
         font-size: 30px;
+    }
+
+    .social--icons{
+        margin-top: 15px;
     }
 
     .tools:hover{
