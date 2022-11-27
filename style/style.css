@@ -55,7 +55,7 @@ header{
 
 .nav-link:hover{
     color: #fff;
-    border-bottom: 2px solid var(--yellow-color);    padding-bottom: 5px;
+    border-bottom: 4px solid var(--yellow-color);    padding-bottom: 5px;
 }
 
 .text{
@@ -108,8 +108,24 @@ header{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
     transition: clip-path .4s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}   
+} 
+
+.card--project1:hover{
+    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+}
+
+
+.card--project2:hover{
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
+    clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
+}
+
+.card--project3:hover{
+    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    
+}
 
 .card--project1{
     background-color: #fff;
@@ -130,28 +146,12 @@ header{
     border-radius: 15px;
     border: var(--white-color) 4px solid;
     margin-top: 35px;
+    -webkit-transition: all 1s ease;
 }
 
-/* CARD ANIMATION */
-
-
-.card--project1:hover{
-    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
-    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+.card--image img:hover{
+    -webkit-transform:scale(1.4);
 }
-
-
-.card--project2:hover{
-    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
-    clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
-}
-
-.card--project3:hover{
-    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
-    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
-    
-}
-
 
 /* Section MAIN Skills Chevrons*/
 
@@ -267,6 +267,91 @@ header{
 .container .section--skill ul>li{
     font-style: italic;
     margin-top: 5px;
+}
+
+/* FOLLOW SECTION */
+
+.section--follow{
+    margin-top: 170px;
+    color: #E1B648;
+    justify-content: center;
+    background-color: var(--black-color);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 40px, rgba(0, 0, 0, 0.22) 0px 10px 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.section--follow li{
+    font-family: 'anton';
+    font-size: 75px;
+    display: inline;
+    margin: auto;
+    margin-bottom: 0;
+    letter-spacing: 15px;
+    animation: flash 2s linear infinite;
+}
+
+.follow--message{
+    margin: 0;
+}
+
+@keyframes flash{
+    0%{
+        color: var(--grey-color);
+        text-shadow: none;
+    }
+    90%{
+        color: var(--grey-color);
+        text-shadow: none;
+    }
+    100%{
+        color:#fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+    }
+}
+
+.section--follow li:nth-child(1){
+    animation-delay: .1s;
+}
+.section--follow li:nth-child(2){
+    animation-delay: .15s;
+}
+.section--follow li:nth-child(3){
+    animation-delay: .2s;
+}
+.section--follow li:nth-child(4){
+    animation-delay: .25s;
+}
+.section--follow li:nth-child(5){
+    animation-delay: .3s;
+}
+.section--follow li:nth-child(6){
+    animation-delay: .35s;
+}
+.section--follow li:nth-child(7){
+    animation-delay: .4s;
+}
+.section--follow li:nth-child(8){
+    animation-delay: .45s;
+}
+.section--follow li:nth-child(9){
+    animation-delay: .5s;
+}
+.section--follow li:nth-child(10){
+    animation-delay: .55s;
+}
+.section--follow li:nth-child(11){
+    animation-delay: .6s;
+}
+.section--follow li:nth-child(12){
+    animation-delay: .66s;
+}
+.section--follow li:nth-child(13){
+    animation-delay: .7s;
+}
+.section--follow li:nth-child(14){
+    animation-delay: .75s;
 }
 
 /* FOOTER */
@@ -465,6 +550,10 @@ header{
     .chevron1{
         margin-left: 4%;
     }
+    .section--follow li{
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
 }
 
 @media (min-width:10px) and (max-width: 992px){
@@ -535,6 +624,10 @@ header{
     
     .social--icons>i{
         margin: auto;
+    }
+
+    .section--follow li{
+        font-size: 30px;
     }
 }
 
