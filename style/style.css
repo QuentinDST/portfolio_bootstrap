@@ -270,7 +270,6 @@ header{
 }
 
 .formation--content--text{
-    list-style-type: none;
     text-align: justify;
     
 }
@@ -318,7 +317,7 @@ header{
 }
 
 .name--email{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .name label{
@@ -332,11 +331,15 @@ header{
 }
 
 .contact input{
-    margin: auto;
+    margin-left: auto;
     background-color: var(--grey-color);
     border: none;
     border-radius: 4px;
-    width: 97%;
+    width: 98%;
+}
+
+#name{
+    margin-left: 0;
 }
 
 .form-group{
@@ -372,6 +375,35 @@ header{
     color: var(--white-color);
     font-weight: bold;
 }
+
+/* COPYRIGHT FOOTER */
+
+.copyright{
+    width: 100vw;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    height: 100px;
+    font-size: 24px;
+}
+
+.copyright a{
+    color: var(--white-color);
+}
+
+.copyright--icon{
+    color: var(--yellow-color);
+}
+
+.social--icons a i{
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.copyright--icon{
+    margin-right: 15px;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -440,13 +472,39 @@ header{
 
     .text--content h2{
         font-size: 25px;
-    }   
+    } 
+
+    .email label{
+        margin-top: 10px;
+    }
+
+    .content--text{
+        margin: 15px;
+    }
+    
+    .contact input{
+        margin: auto;
+        width: 100%;
+    }
+    
+    #name{
+        margin-left: 0;
+    }  
+
+    .copyright--text{
+        text-align: center;
+    }
+    
+    .social--icons>i{
+        margin: auto;
+    }
 }
 
 @media (min-width: 768px){
     .section--skill{
         margin-top: -280px;
     }
+
     .text--content h1{
         font-size: 80px;
     }
@@ -461,7 +519,6 @@ header{
         flex-direction: row;
     }
 }   
-
 
 @media (min-width: 1450px){
     .card--project1, .card--project2, .card--project3{
