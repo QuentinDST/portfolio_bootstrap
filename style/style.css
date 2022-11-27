@@ -51,11 +51,12 @@ header{
     text-decoration: none;
     margin-right: 30px;
     position: relative;
+    transition: all 0.5s ease;
 }
 
 .nav-link:hover{
-    color: #fff;
-    border-bottom: 4px solid var(--yellow-color);    padding-bottom: 5px;
+    color: var(--yellow-color);
+    letter-spacing: 2px;
 }
 
 .text{
@@ -68,6 +69,13 @@ header{
     font-size: 60px;
     line-height: 1;
     margin-bottom: 30px;
+    transition: all 1s ease;
+}
+
+.text--content h1:hover{
+    cursor: pointer;
+    text-shadow: 0 0 10px #FFFFFF, 2px 2px 7px rgba(206,89,55,0.23);
+    letter-spacing: 5px;
 }
 
 .text--content i{
@@ -81,7 +89,10 @@ header{
 }
 
 .text--content h3{
+    background-color: var(--black-color);
+    opacity: 0.9;
     font-size: 20px;
+    border-radius: 8px;
 }
 
 
@@ -101,7 +112,7 @@ header{
     width: 250px;
     height: 150px;
     margin-bottom: 70px;
-    border-radius: 5px;
+    border-radius: 4px;
     vertical-align: middle;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     cursor: pointer;
@@ -123,7 +134,7 @@ header{
     display: block;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 15px;
+    border-radius: 4px;
     border: var(--white-color) 3px solid;
     margin-top: 35px;
     -webkit-transition: all 1s ease;
@@ -131,6 +142,7 @@ header{
 
 .card--image img:hover{
     -webkit-transform: scale(1.4);
+    border-radius: 15px;
 }
 
 /* Section MAIN Skills Chevrons*/
@@ -190,7 +202,7 @@ header{
     width: 50px;
     height: 4px;
     background-color: var(--yellow-color);
-    bottom: 23px;
+    bottom: 24px;
     left: 25px;
     transform: rotate(90deg);
     position: absolute;
@@ -201,7 +213,7 @@ header{
     width: 20px;
     height: 3px;
     margin-top: -15px;
-    margin-left: -45px;
+    margin-left: -44px;
     background-color: var(--yellow-color);
     position: relative;
 }
@@ -290,6 +302,11 @@ header{
 
 .follow--message{
     margin: 0;
+    cursor: pointer;
+}
+
+.follow--message a{
+    text-decoration: none;
 }
 
 @keyframes flash{
@@ -303,7 +320,7 @@ header{
     }
     100%{
         color:#fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+        text-shadow: 0 0 7px var(--yellow-color), 0 0 50px var(--yellow-color);
     }
 }
 
