@@ -87,9 +87,13 @@ header{
 
 /* MAIN */
 
+
+
 /* Section MAIN Card-Project */
 
 .card--project{
+    display: table-cell;
+    vertical-align: middle;
     margin-top: -295px;
 }
 
@@ -98,7 +102,14 @@ header{
     height: 150px;
     margin-bottom: 70px;
     border-radius: 5px;
-}
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+    transition: clip-path .4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}   
 
 .card--project1{
     background-color: #fff;
@@ -112,8 +123,35 @@ header{
     background-color: rgb(0, 0, 0);
 }
 
+.card--image img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+    border: var(--white-color) 4px solid;
+    margin-top: 35px;
+}
 
-/* MAIN */
+/* CARD ANIMATION */
+
+
+.card--project1:hover{
+    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+}
+
+
+.card--project2:hover{
+    -webkit-clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
+    clip-path: polygon(15% 0, 100% 0, 100% 0, 100% 86%, 86% 100%, 0 100%, 0 100%, 0 15%);
+}
+
+.card--project3:hover{
+    -webkit-clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    clip-path: polygon(30% 0%, 86% 0, 100% 14%, 100% 100%, 70% 100%, 15% 100%, 0 86%, 0 0);
+    
+}
+
 
 /* Section MAIN Skills Chevrons*/
 
@@ -183,7 +221,7 @@ header{
     width: 20px;
     height: 3px;
     margin-top: -15px;
-    margin-left: -35px;
+    margin-left: -45px;
     background-color: var(--yellow-color);
     position: relative;
 }
@@ -193,8 +231,8 @@ header{
     width: 20px;
     height: 3px;
     background-color: var(--yellow-color);
-    top: -9px;
-    left: 13px;
+    top: -10px;
+    margin-left: 4px;
     transform: rotate(90deg);
     position: absolute;
 }
@@ -529,4 +567,10 @@ header{
     .card--project{
         margin-top: -420px;
         } 
+}
+
+@media (max-width: 1450px){
+    .card--image img{
+        margin-top: 10px;
+    }
 }
