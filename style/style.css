@@ -49,7 +49,7 @@ header{
     color: #fff;
     font-size: 25px;
     text-decoration: none;
-    margin-right: 0;
+    margin-left: 30px;
     position: relative;
     transition: all 0.5s ease;
 }
@@ -57,6 +57,7 @@ header{
 .nav-link:hover{
     color: var(--yellow-color);
     letter-spacing: 2px;
+
 }
 
 .text{
@@ -67,6 +68,10 @@ header{
 #navbarNavAltMarkup{
     position: absolute;
     margin-top: 250px;
+}
+
+.text--content{
+    margin-top: 90px;
 }
 
 .text--content h1{
@@ -207,7 +212,7 @@ header{
     width: 50px;
     height: 4px;
     background-color: var(--yellow-color);
-    bottom: 24px;
+    bottom: 23px;
     left: 25px;
     transform: rotate(90deg);
     position: absolute;
@@ -217,8 +222,8 @@ header{
     bottom: -230px;
     width: 20px;
     height: 3px;
-    margin-top: -15px;
-    margin-left: -44px;
+    margin-top: -18px;
+    margin-left: -40px;
     background-color: var(--yellow-color);
     position: relative;
 }
@@ -228,8 +233,8 @@ header{
     width: 20px;
     height: 3px;
     background-color: var(--yellow-color);
-    top: -10px;
-    margin-left: 4px;
+    top: -9px;
+    margin-left: 2px;
     transform: rotate(90deg);
     position: absolute;
 }
@@ -285,9 +290,8 @@ header{
 /* FOLLOW SECTION */
 
 .section--follow{
-    margin-top: 170px;
+    margin-top: 200px;
     color: #E1B648;
-    justify-content: center;
     background-color: var(--black-color);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 40px, rgba(0, 0, 0, 0.22) 0px 10px 40px;
@@ -297,7 +301,7 @@ header{
 
 .section--follow li{
     font-family: 'anton';
-    font-size: 75px;
+    font-size: 55px;
     display: inline;
     margin: auto;
     margin-bottom: 0;
@@ -328,6 +332,8 @@ header{
         text-shadow: 0 0 7px var(--yellow-color), 0 0 50px var(--yellow-color);
     }
 }
+
+
 
 .section--follow li:nth-child(1){
     animation-delay: .1s;
@@ -412,11 +418,11 @@ header{
 
 .formation--content--text{
     text-align: justify;
-    
 }
 
 .formation--content--text li{
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .formation--content--text li i{
@@ -425,9 +431,16 @@ header{
 }
 
 .content--text{
-    margin: 40px;
     font-size: 20px;
+    margin-left: 30px;
 }
+
+.content--text2{
+    margin-left: 30px;
+    font-size: 20px;
+    top: -5px;
+}
+
 
 .formation--text{
     text-align: center;
@@ -499,31 +512,25 @@ header{
 }
 
 .contact--button{
-    background-color: var(--yellow-color);
-    border-radius: 2px;
-    margin-top: 30px;
-    height: 40px;
+    margin-top: 20px;
+    height: 30px;
     text-align: center;
 }
 
-.contact--button, a{
-    font-size: 30px;
+.btn-warning{
+    font-size: 20px;
+    width: 100%;
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--white-color)!important;
     font-weight: bold;
     -webkit-transition: all 0.3s ease;
 }
 
-.contact--button:hover{
+.contact--button .btn-warning:hover{
     letter-spacing: 3px;
     color: var(--white-color);
     border: 1px solid var(--white-color);
     filter: drop-shadow(4px 5px 10px #665E5E);
-}
-
-.contact--button> a:hover{
-    color: var(--white-color);
-    text-decoration: none;
 }
 
 
@@ -621,6 +628,10 @@ header{
         align-items: center;
         justify-content: center;
     }
+    
+    .text--content{
+        margin-top: 10px;
+    }
 
     .text--content h3{
         font-size: 14px;
@@ -674,6 +685,10 @@ header{
 }
 
 @media (min-width: 768px){
+    .items{
+        margin-top: -120px;
+    }
+
     .section--skill{
         margin-top: -280px;
     }
