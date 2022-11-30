@@ -246,10 +246,14 @@ header{
 }
 
 .section--skils ,h2{
-    font-weight: bold;
+    font-family: 'anton';
+    font-weight: lighter;
+    color: var(--grey-color);
+    -webkit-transition: all 2s ease;
 }
 
 .section--skill, ul{
+    margin-top: 30px;
     padding: 0;
 }
 
