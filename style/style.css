@@ -245,11 +245,11 @@ header{
     margin-top: 50px;
 }
 
-.section--skils ,h2{
+.tools .skill--title{
     font-family: 'anton';
     font-weight: lighter;
-    color: var(--grey-color);
-    -webkit-transition: all 2s ease;
+    color: var(--black-color);
+    -webkit-transition: all 1s ease;
 }
 
 .section--skill, ul{
