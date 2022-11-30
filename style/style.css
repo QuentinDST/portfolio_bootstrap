@@ -295,12 +295,13 @@ header{
 
 .section--follow{
     margin-top: 200px;
+    width: auto;
     color: #E1B648;
     background-color: var(--black-color);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 14px 40px, rgba(0, 0, 0, 0.22) 0px 10px 40px;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
 }
 
 .section--follow li{
