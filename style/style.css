@@ -719,6 +719,22 @@ header{
     .card--project{
         margin-top: -420px;
         } 
+        
+    header{
+        animation: backgroundanim 5s ease 0s 1 normal forwards;
+    }
+    
+    @keyframes backgroundanim {
+        0% {
+            background-position: center bottom;
+            background-size: 100%;
+        }
+    
+        100% {
+            background-position: center bottom;
+            background-size: 80%;
+        }
+    }
 }
 
 @media (max-width: 1450px){

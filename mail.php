@@ -1,6 +1,8 @@
 <?php
-echo $_POST['message'];
-    $retour = mail('quentin.dstre@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: webmaster@monsite.fr');
-    if ($retour)
-        echo '<p>Votre message a bien été envoyé.</p>';
+$data = array(
+    "mail" => … // votre adresse mail
+    "objet" => … // sujet du message sous le format : « NOM , DATE(JJ/MM) : [OBJET] »
+    "message" => … // contenu du message
+    "isHTML" => 'true'
+   );
 ?>
