@@ -617,6 +617,13 @@ header{
     .chevron4{
         bottom: -250px
     }
+
+    .text--content h3{
+        letter-spacing: 2px;
+        line-height: 30px;
+        padding: 20px 20px 20px 0;
+    }
+    
 }
 
 @media (max-width: 768px){
@@ -626,6 +633,7 @@ header{
 
     .card--project{
         margin-top: -170px;
+        margin-bottom: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -637,6 +645,7 @@ header{
 
     .text--content h3{
         font-size: 14px;
+        line-height: 22px;
         }
 
     .text--content h2{
